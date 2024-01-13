@@ -1,0 +1,3 @@
+{
+    singleRun: true
+}
