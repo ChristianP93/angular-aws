@@ -48,6 +48,9 @@ jobs:
             --region eu-south-1 \
             dist/angular-aws s3://angular-bucket-9319230doq12021
 
+  refresh-cache:
+    runs-on: ubuntu-latest
+    steps:
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
         env:
