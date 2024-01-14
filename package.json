@@ -7,10 +7,15 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "terraformInit":"terraform init",
+    "terraformPlan": "terraform plan",
+    "terraformApply": "terraform apply -auto-approve",
+    "terraformDestroy": "terraform destroy"
   },
   "private": true,
   "dependencies": {
