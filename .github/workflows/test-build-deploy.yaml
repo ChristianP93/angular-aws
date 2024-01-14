@@ -37,4 +37,4 @@ jobs:
           aws s3 cp \
             --recursive \
             --region eu-south-1 \
-            dist s3://angular-bucket-9319230doq12021
+            dist/angular-aws s3://angular-bucket-9319230doq12021
