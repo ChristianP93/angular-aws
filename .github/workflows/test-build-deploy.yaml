@@ -35,8 +35,8 @@ jobs:
         run: npm run test:headless
 
       - name: Build
-        run: npm run build:prod
-
-      - name: Deploy
-        if: success()
-        run: aws s3 sync ./dist/angular-github-actions-amazon-s3 s3://angular-github-actions-amazon-s3
+        run: npm run build
+        
+      # - name: Deploy
+      #   if: success()
+      #   run: aws s3 sync ./dist/angular-github-actions-amazon-s3 s3://angular-github-actions-amazon-s3
